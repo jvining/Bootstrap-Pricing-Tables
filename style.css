@@ -1,0 +1,37 @@
+/* Bootstrap Auxillary Verital Offset Classes */
+.voffset {margin-top:2px;}
+.voffset1 {margin-top:5px;}
+.voffset2 {margin-top:10px;}
+.voffset3 {margin-top:15px;}
+.voffset4 {margin-top:30px;}
+.voffset5 {margin-top:40px;}
+.voffset6 {margin-top:60px;}
+.voffset7 {margin-top:80px;}
+.voffset8 {margin-top:100px;}
+.voffset9 {margin-top:150px;}
+
+/*-----------------------------------------------------------------
+// Pricing Table base Styling
+-----------------------------------------------------------------*/
+.panel-body {background-color:#aaa;}
+
+/*  Pricing Table Hover Effects */
+.panel.price {border: 1px solid rgb(236, 236, 236); }
+.panel.price, .panel.price>.panel-heading{ border-radius:0px;  -moz-transition: all .3s ease; -o-transition:  all .3s ease; -webkit-transition:  all .3s ease; }
+.panel.price:hover{ box-shadow: 0px 0px 30px rgba(0,0,0, .2); }
+.panel.price:hover>.panel-heading{ box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset; }
+
+/* Pricing Table Subtle Border Styling */
+.panel.price>.panel-heading{ box-shadow: 0px 3px 0px rgba(200,200,200, .2) inset; }
+
+/*  Pricing Table Footer */
+.price .panel-footer { color: #fff; border-bottom:0px; background-color:  rgba(0,0,0, .1); box-shadow: 0px 3px 0px rgba(0,0,0, .3);} /* Footer Box styling */
+.price .pricing-qty {color:gray;}
+
+/* Pricing Table Pricing Header Typography */
+.panel .panel-body p strong {color: #47080B; font-weight:900; font-size:30px;}
+.panel-body p strike {font-size:24px; }
+
+/* Pricing Table Red Button */
+.btn-register{text-shadow:1px 1px #333; color:#fff; background:#c9222b;  font-size:20px ; font-weight:900 ; text-transform:uppercase; letter-spacing:1px ;}
+.btn-register:hover{background:#a7060f; color:#fff;}
