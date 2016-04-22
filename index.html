@@ -1,213 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap Pricing Tables </title>
+	<title>Bootstrap Pricing Tables</title>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="https://github.com/jvining">
+	<meta name="description" content=" An HTML Template using Bootstrap, Jquery, & Google WebFonts. All Called in from CDNs, so this document is available for immediate use">
 
-    <!-- Bootstrap core JavaScript  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap CDN -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  	<link href="style.css" rel="stylesheet" type="text/css">
 
- 	<!-- Bootstrap core CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
- 	<link href="style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  	<![endif]-->
 </head>
-
 <body>
 
-	<div class="container">
+ 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ 	    <div class="container">
+ 	        <div class="navbar-header">
+ 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+ 	                <span class="sr-only">Toggle navigation</span>
+ 	                <span class="icon-bar"></span>
+ 	                <span class="icon-bar"></span>
+ 	                <span class="icon-bar"></span>
+ 	            </button>
+ 	            <a class="navbar-brand" href="#">Bootstrap Pricing Tables</a>
+ 	        </div>
+ 	        <div class="collapse navbar-collapse hidden" id="navbar-collapse">
+ 	            <ul class="nav navbar-nav pull-right">
+ 	                <li><a href="#">About</a></li>
+ 	                <li><a href="#">Services</a></li>
+ 	                <li><a href="#">Contact</a></li>
+ 	             </ul>
+ 	        </div>
+ 	    </div>
+ 	</nav>
+
+	<div class="container" id="pricing-page">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1 class="text-center">Bootstrap Pricing Tables</h1>
+				<h1 class="page-header">Bootstrap Pricing Tables</h1>
 			</div>
 		</div>
-	</div>
-	
-    <div class="container voffset2">
         <div class="row">
-            <div class="col-xs-12">
-                <h2>Single Pricing Table Example</h2>
-            </div>
-             <div class="row">
-                <div class="col-xs-12">
-                      <div class="panel price">
-                        <div class="panel-heading text-center">
-                            <h4>Premium Package</h4>
-                        </div>
-                        <div class="panel-body text-center">
-                            <p class="text-center"><strike>€1,299</strike> <strong> €899</strong>
-                                <br> <span class="pricing-date"> Register By 01/01/2015</span> <span class="pricing-discount">| Save €1,100!</span>
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush text-center list-unstyled pricing-height">
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June
-                            </li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
-                            <li class="list-group-item text-center">
-                                X
-                            </li>
-                        </ul>
-                        <div class="panel-footer">
-                            <div class="row">
-                                <div class="col-xs-7 col-sm-9 col-md-9 col-lg-10">
-                                    <a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
-                                </div>
-                                <div class="col-xs-5 col-sm-3 col-md-3 col-lg-2">
-
-                                    <div class="col-xs-3 col-sm-3 col-lg-3 voffset2">
-                                        <p class="pull-right pricing-qty">Qty</p>
-                                    </div>
-
-                                    <div class="col-xs-9 col-sm-9 col-lg-9 voffset1">
-                                        <select class="form-control pull-right">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                   </div>
-                                </div>
-                           </div>
-                       </div>
+			<div class="col-xs-12">
+	        	<h2>Single Pricing Table Example</h2>
+	            <div class="panel price">
+                	<div class="panel-heading text-center">
+                    	<h4>Premium Package</h4>
                     </div>
-                </div>
-             </div>
-         </div>
-    </div>
+                    <div class="panel-body text-center">
+                    	<p class="text-center">
+							<strike>$1,299</strike> <strong> $899</strong>
+                        	<span class="pricing-date"> Register By 01/01/2015</span> 
+							<span class="pricing-discount">| Save $1,100!</span>
+                        </p>
+					</div>
+                    <ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+                   		<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
+                        <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
+                        <li class="list-group-item text-center">X</li>
+					</ul>
+                    <div class="panel-footer">
+        				<div class="row">
+        					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            	<a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
+                            </div>
+                            <div class="col-xs-5 col-sm-3 col-md-3 col-lg-2">
+								<div class="col-xs-3 col-sm-3 col-lg-3 voffset2">
+                                	<p class="pull-right pricing-qty">Qty</p>
+								</div>
+    						<div class="col-xs-9 col-sm-9 col-lg-9 voffset1">
+                            	<select class="form-control pull-right">
+                                	<option>1</option>
+                                	<option>2</option>
+                                	<option>3</option>
+                                	<option>4</option>
+                                	<option>5</option>
+                                	<option>6</option>
+                                	<option>7</option>
+                                	<option>8</option>
+                                	<option>9</option>
+                                	<option>10</option>
+								</select>
+							</div>
+						</div>
+ 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Double Pricing Table Example</h2>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="panel price">
+					<div class="panel-heading text-center">
+						<h4>Premium Package</h4>
+					</div>
+					<div class="panel-body text-center">
+						<p class="text-center"><strike>$1,299</strike> <strong>$899</strong><br>
+						<span class="pricing-date">Register By 01/01/2015</span> <span class="pricing-discount">| Save $1,100!</span></p>
+					</div>
+					<ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
+						<li class="list-group-item text-center">X</li>
+					</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-xs-7 col-sm-7 col-md-8 col-lg-8">
+								<a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
+							</div>
+							<div class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
+								<div class="col-xs-3 col-sm-4 col-lg-4 voffset2">
+									<p class="pull-right pricing-qty">Qty</p>
+								</div>
+								<div class="col-xs-9 col-sm-8 col-lg-8 voffset1">
+						        	<select class="form-control pull-right">
+						            	<option>1</option>
+						            	<option>2</option>
+						            	<option>3</option>
+						            	<option>4</option>
+						            	<option>5</option>
+						            	<option>6</option>
+						            	<option>7</option>
+						            	<option>8</option>
+						            	<option>9</option>
+						            	<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="panel price">
+					<div class="panel-heading text-center">
+						<h4>Standard Package</h4>
+					</div>
+					<div class="panel-body text-center">
+						<p class="text-center"><strike>$1,299</strike> <strong>$899</strong><br>
+						<span class="pricing-date">Register By 01/01/2015</span> <span class="pricing-discount">| Save $1,100!</span></p>
+					</div>
+					<ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+						<li class="list-group-item text-center">X</li>
+						<li class="list-group-item text-center">X</li>
+						<li class="list-group-item text-center">X</li>
+					</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-xs-7 col-sm-7 col-md-8 col-lg-8">
+								<a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
+							</div>
+							<div class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
+								<div class="col-xs-3 col-sm-4 col-lg-4 voffset2">
+									<p class="pull-right pricing-qty">Qty</p>
+								</div>
+								<div class="col-xs-9 col-sm-8 col-lg-8 voffset1">
+						        	<select class="form-control pull-right">
+						            	<option>1</option>
+						            	<option>2</option>
+						            	<option>3</option>
+						            	<option>4</option>
+						            	<option>5</option>
+						            	<option>6</option>
+						            	<option>7</option>
+						            	<option>8</option>
+						            	<option>9</option>
+						            	<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Triple Pricing Table Example</h2>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="panel price">
+					<div class="panel-heading text-center">
+						<h4>Standard Package</h4>
+					</div>
+					<div class="panel-body text-center">
+						<p class="text-center"><strike>$1,299</strike> <strong>$1099</strong><br>
+						<span class="pricing-date">Register By 01/01/2015</span> <span class="pricing-discount">| Save $1,100!</span></p>
+					</div>
+					<ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
+						<li class="list-group-item text-center">X</li>
+					</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-xs-7 col-sm-6 col-md-7 col-lg-8">
+								<a class="btn btn-lg btn-block btn-danger btn-register" href="#"><span class="small">Register <span class="hidden-sm">now</span></span></a>
+							</div>
+							<div class="col-xs-5 col-sm-6 col-md-5 col-lg-4">
+								<div class="col-xs-3 col-sm-3 col-lg-4 voffset2">
+									<p class="pull-right pricing-qty">Qty</p>
+								</div>
+								<div class="col-xs-9 col-sm-9 col-lg-8 voffset1">
+						        	<select class="form-control pull-right">
+						            	<option>1</option>
+						            	<option>2</option>
+						            	<option>3</option>
+						            	<option>4</option>
+						            	<option>5</option>
+						            	<option>6</option>
+						            	<option>7</option>
+						            	<option>8</option>
+						            	<option>9</option>
+						            	<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="panel price">
+					<div class="panel-heading text-center">
+						<h4>Premium Package</h4>
+					</div>
+					<div class="panel-body text-center">
+						<p class="text-center"><strike>$1,499</strike> <strong>$1299</strong><br>
+						<span class="pricing-date">Register By 01/01/2015</span> <span class="pricing-discount">| Save $1,100!</span></p>
+					</div>
+					<ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
+						<li class="list-group-item text-center">X</li>
+					</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-xs-7 col-sm-6 col-md-7 col-lg-8">
+								<a class="btn btn-lg btn-block btn-danger btn-register" href="#"><span class="small">Register <span class="hidden-sm">now</span></span></a>
+							</div>
+							<div class="col-xs-5 col-sm-6 col-md-5 col-lg-4">
+								<div class="col-xs-3 col-sm-3 col-lg-4 voffset2">
+									<p class="pull-right pricing-qty">Qty</p>
+								</div>
+								<div class="col-xs-9 col-sm-9 col-lg-8 voffset1">
+						        	<select class="form-control pull-right">
+						            	<option>1</option>
+						            	<option>2</option>
+						            	<option>3</option>
+						            	<option>4</option>
+						            	<option>5</option>
+						            	<option>6</option>
+						            	<option>7</option>
+						            	<option>8</option>
+						            	<option>9</option>
+						            	<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="panel price">
+					<div class="panel-heading text-center">
+						<h4>Ultra Premium Package</h4>
+					</div>
+					<div class="panel-body text-center">
+						<p class="text-center"><strike>$1,699</strike> <strong>$1499</strong><br>
+						<span class="pricing-date">Register By 01/01/2015</span> <span class="pricing-discount">| Save $1,100!</span></p>
+					</div>
+					<ul class="list-group list-group-flush text-center list-unstyled pricing-height">
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
+						<li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
+						<li class="list-group-item text-center">X</li>
+					</ul>
+					<div class="panel-footer">
+						<div class="row">
+							<div class="col-xs-7 col-sm-6 col-md-7 col-lg-8">
+								<a class="btn btn-lg btn-block btn-danger btn-register" href="#"><span class="small">Register <span class="hidden-sm">now</span></span></a>
+							</div>
+							<div class="col-xs-5 col-sm-6 col-md-5 col-lg-4">
+								<div class="col-xs-3 col-sm-3 col-lg-4 voffset2">
+									<p class="pull-right pricing-qty">Qty</p>
+								</div>
+								<div class="col-xs-9 col-sm-9 col-lg-8 voffset1">
+						        	<select class="form-control pull-right">
+						            	<option>1</option>
+						            	<option>2</option>
+						            	<option>3</option>
+						            	<option>4</option>
+						            	<option>5</option>
+						            	<option>6</option>
+						            	<option>7</option>
+						            	<option>8</option>
+						            	<option>9</option>
+						            	<option>10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- END .container -->
 
-    <div class="container voffset2">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Double Pricing Table Example</h2>
-            </div>
-             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                     <div class="panel price">
-                        <div class="panel-heading text-center">
-                            <h4>Premium Package</h4>
-                        </div>
-                        <div class="panel-body text-center">
-                            <p class="text-center"><strike>€1,299</strike> <strong> €899</strong>
-                                <br> <span class="pricing-date"> Register By 01/01/2015</span> <span class="pricing-discount">| Save €1,100!</span>
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush text-center list-unstyled pricing-height">
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Free Digital Travel Report</li>
-                            <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> 3 Free Video Presentations</li>
-							<li class="list-group-item text-center">X</li>
-                        </ul>
-                        <div class="panel-footer">
-                            <div class="row">
-                                <div class="col-xs-7 col-sm-9 col-md-8 col-lg-8">
-                                    <a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
-                                </div>
-                                <div class="col-xs-5 col-sm-3 col-md-4 col-lg-4">
+	<footer>
+		<div class="container">
+		    	<div class="row">
+			        	<div class="col-xs-12">
+					<hr/>
+			            	<p>Starter Bootstrap Template 2016 |  Built with <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io/">Font Awesome</a>, <a href="https://jquery.com/">Jquery</a></p>
 
-                                    <div class="col-xs-3 col-sm-3 col-lg-4 voffset2">
-                                        <p class="pull-right pricing-qty">Qty</p>
-                                    </div>
+			        	</div>
+		    	</div>
+		</div>
+	</footer>
 
-                                    <div class="col-xs-9 col-sm-9 col-lg-8 voffset1">
-                                        <select class="form-control pull-right">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-                <!-- 1st Table Ends-->
+<!-- JS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="panel price">
-                       <div class="panel-heading text-center">
-                           <h4>Standard Package</h4>
-                       </div>
-                       <div class="panel-body text-center">
-                           <p class="text-center"><strike>€1,299</strike> <strong> €899</strong>
-                               <br> <span class="pricing-date"> Register By 01/01/2015</span> <span class="pricing-discount">| Save €1,100!</span>
-                           </p>
-                       </div>
-                       <ul class="list-group list-group-flush text-center list-unstyled pricing-height">
-                           <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Main Conference 17th - 18th June</li>
-                           <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> All conference sessions</li>
-                           <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Meals and refreshments</li>
-                           <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Use of the event app</li>
-                           <li class="list-group-item"><span class="fa fa-check-square pull-left"></span> Audio and PDF Presentations</li>
-                           <li class="list-group-item text-center">X</li>
-                           <li class="list-group-item text-center">X</li>
-                           <li class="list-group-item text-center">X</li>
-                
-                       </ul>
-                       <div class="panel-footer">
-                           <div class="row">
-                               <div class="col-xs-7 col-sm-9 col-md-8 col-lg-8">
-                                   <a class="btn btn-lg btn-block btn-danger btn-register" href="#">Register now</a>
-                               </div>
-                               <div class="col-xs-5 col-sm-3 col-md-4 col-lg-4">
-                                   <div class="col-xs-3 col-sm-3 col-lg-4 voffset2">
-                                       <p class="pull-right pricing-qty">Qty</p>
-                                   </div>
-                                   <div class="col-xs-9 col-sm-9 col-lg-8 voffset1">
-                                       <select class="form-control pull-right">
-                                           <option>1</option>
-                                           <option>2</option>
-                                           <option>3</option>
-                                           <option>4</option>
-                                           <option>5</option>
-                                           <option>6</option>
-                                           <option>7</option>
-                                           <option>8</option>
-                                           <option>9</option>
-                                           <option>10</option>
-                                       </select>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-                <!-- 2nd Table Ends-->
-            </div>
-         </div>
-    </div>
- 
 </body>
 </html>
+
